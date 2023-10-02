@@ -42,7 +42,8 @@ body {
     grid-template-columns: repeat(5,1fr);
     @media screen and (max-width:720px)
     {
-     visibility: hidden;   
+     visibility: hidden; 
+     display:none;  
     }
 }
 
