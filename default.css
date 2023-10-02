@@ -26,16 +26,19 @@ body {
     padding-left: 90px;
     font-weight: bolder;
     font-size: larger;
-    @media screen and (max-width:419px)
-    {
-     font-size: 4.5vw;  
-    }
-    @media screen and (max-width:720px)
-    {
-     padding-left: 2vw;   
-    }
-
 }
+
+@media screen and (max-width:419px){
+    .headerLeft {
+        font-size: 4.5vw;  
+    }
+}
+@media screen and (max-width:720px){
+   .headerLeft {
+        padding-left: 2vw;   
+       }
+}
+
 .headerRight {
     grid-column-start:2;
     display:grid;
