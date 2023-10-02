@@ -28,42 +28,20 @@ body {
     font-size: larger;
 }
 
-@media screen and (max-width:419px){
-    .headerLeft {
-        font-size: 4.5vw;  
-    }
-}
-@media screen and (max-width:720px){
-   .headerLeft {
-        padding-left: 2vw;   
-       }
-}
-
 .headerRight {
     grid-column-start:2;
     display:grid;
     align-items:center;
-    grid-template-columns: repeat(5,1fr);
-    @media screen and (max-width:720px)
-    {
-     visibility: hidden; 
-     display:none;  
-    }
+    grid-template-columns: repeat(5,1fr);   
 }
 
 .bodyContent {
     grid-row-start: 2;
-    
     color: white;
     display:grid;
     @media screen and (min-width:721px){
         grid-template-columns:55% 45%;
     }
-    @media screen and (max-width:720px){
-        grid-template-rows:60vw 40vw;
-    }
-   
-
 }
 .bodyLeft {
     @media screen and (min-width:721px){
@@ -119,16 +97,11 @@ body {
 
 
 }
-.name{
-}
 .displayPic{
     height:300px;
     width:300px;
     border-radius:20px;
-    @media screen and (max-width:720px){
-        height:70vw;
-        width:70vw;
-    }
+ 
 }
 
 
@@ -140,9 +113,6 @@ body {
     width: 100%;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    @media screen and (min-width:721px){
-     visibility:hidden;
-    }
   }
 
   .navbar a {
@@ -166,7 +136,7 @@ body {
     background-color: #04AA6D;
     color: white;
   }
-  .name {
+  /* .name {
     @media screen and (max-width:320px){
         text-align: center;
         
@@ -177,4 +147,43 @@ body {
         text-align: center;
         
     }
-  }
+  } */
+
+
+  @media screen and (max-width:419px){
+    .headerLeft {
+        font-size: 4.5vw;  
+    }
+}
+@media screen and (max-width:720px){
+   .headerLeft {
+        padding-left: 2vw;   
+       }
+    .headerRight  {
+        visibility: hidden; 
+        display:none;  
+       }
+    .bodyContent{
+        grid-template-rows:60vw 40vw;
+    }
+
+    .displayPic{
+        height:70vw;
+        width:70vw;
+    }
+}
+
+@media screen and (max-width:320px){ 
+    .name{
+        text-align: center;
+    }
+    .description{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:721px){
+    .navbar{
+        visibility:hidden;
+    }
+   }
