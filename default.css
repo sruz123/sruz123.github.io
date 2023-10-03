@@ -127,7 +127,7 @@ body {
     }
   } */
 
-  @media screen and (min-width:721px){
+  @media (min-width:721px){
     .navbar{
         visibility:hidden;
     }
@@ -143,7 +143,7 @@ body {
     }
    }
 
-@media screen and (max-width:720px){
+@media (max-width:720px){
    .headerLeft {
         padding-left: 2vw;   
        }
@@ -168,13 +168,13 @@ body {
     }
 }
 
-@media screen and (max-width:419px){
+@media (max-width:419px){
     .headerLeft {
-        font-size: 4.5vw;  
+        font-size: 4.4vw;  
     }
     }
 
-@media screen and (max-width:320px){ 
+@media (max-width:320px){ 
     .name{
         text-align: center;
     }
